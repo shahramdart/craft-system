@@ -1,0 +1,23 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add this in your global CSS file */
+body {
+  overflow-x: hidden; /* Ensure no horizontal scroll */
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  max-width: 100%; /* Prevent dropdowns from exceeding container width */
+}
+
+.container {
+  overflow: hidden; /* Prevent horizontal scroll within the container */
+}
+@media print {
+  @page {
+    margin: 0; /* Removes the margin for headers and footers */
+  }
+}
